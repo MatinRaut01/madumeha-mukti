@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>मधुमेह स्वास्थ्य फॉर्म</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+  <link rel="stylesheet" href="scrver.js">
+</head>
+<body>
+  <div class="form-container">
+    <h1>अपनी जानकारी भरें और स्वस्थ जीवन की ओर पहला कदम बढ़ाएँ</h1>
+    <p class="subheading">अब नहीं चाहिए ढेर सारी दवाइयाँ – अपनाइए हमारा आयुर्वेदिक काढ़ा और पाएं स्वस्थ जीवन।</p>
+    
+    <form id="healthForm">
+      <label>आपका नाम</label>
+      <input type="text" name="name" placeholder="Enter Your Name" required>
+
+      <label>मोबाइल नंबर</label>
+      <input type="tel" id="mobile" name="mobile" placeholder="Enter Your Mobile Number" maxlength="10" required>
+
+      <label>तुम्हें किस तरह की बीमारी है?</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="disease" value="मधुमेह"> मधुमेह (Diabetes / शुगर)</label>
+        <label><input type="checkbox" name="disease" value="नशामुक्ति"> नशामुक्ति (Alcohol, Tobacco)</label>
+        <label><input type="checkbox" name="disease" value="ब्लड प्रेशर"> ब्लड प्रेशर</label>
+        <label><input type="checkbox" name="disease" value="वजन"> वजन कम/बढ़ाना</label>
+        <label><input type="checkbox" name="disease" value="Other"> Other</label>
+      </div>
+
+      <label>ये बीमारी छोड़कर कोई और समस्या?</label>
+      <textarea name="otherDisease" rows="3" placeholder="अपनी समस्या लिखें..."></textarea>
+
+      <button type="submit">सबमिट करें</button>
+      <p class="success" id="successMessage"></p>
+      <p class="brand">© 2025 Samarth Social Foundation @ Created By MSR Developer </p>
+    </form>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
